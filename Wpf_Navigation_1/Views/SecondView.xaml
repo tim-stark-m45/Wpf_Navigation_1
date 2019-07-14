@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="Wpf_Navigation_1.Views.SecondView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Wpf_Navigation_1.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <StackPanel>
+        <Label FontSize="25" Content="Second"/>
+        <Label FontSize="25" Content="{Binding Text}"/>
+        <TextBox FontSize="25" Text="{Binding Text, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+        <Button FontSize="25" Content="SendToFirst" Command="{Binding SendCommand}" CommandParameter="First"/>
+        <Button FontSize="25" Content="SendToThird" Command="{Binding SendCommand}" CommandParameter="Third"/>
+    </StackPanel>
+</UserControl>

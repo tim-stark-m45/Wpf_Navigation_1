@@ -1,0 +1,26 @@
+{
+  "defaultAssembly": "Wpf_Navigation_1",
+  "components": [
+    { "type": "Wpf_Navigation_1.ViewModels.AppViewModel" },
+    { "type": "Wpf_Navigation_1.ViewModels.FirstViewModel" },
+    { "type": "Wpf_Navigation_1.ViewModels.SecondViewModel" },
+    { "type": "Wpf_Navigation_1.ViewModels.ThirdViewModel" },
+    {
+      "type": "Wpf_Navigation_1.Services.MessageService",
+      "services": [
+        {
+          "type": "Wpf_Navigation_1.Services.IMessageService"
+        }
+      ]
+    },
+    {
+      "type": "Wpf_Navigation_1.Services.NavigationService",
+      "services": [
+        {
+          "type": "Wpf_Navigation_1.Services.INavigationService"
+        }
+      ],
+      "instanceScope": "single-instance"
+    }
+  ]
+}
